@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>951</width>
+    <height>691</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Genetic Algorithm</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #353535;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="8" column="4">
+     <widget class="QLabel" name="currentGeneration">
+      <property name="text">
+       <string>Generation #0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLineEdit" name="functionCoefficientB">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="functionCoefficientA">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="domainB">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="9">
+     <widget class="QListWidget" name="logs"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QCheckBox" name="keepLogs">
+      <property name="text">
+       <string>Keep logs</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="QLabel" name="precis">
+      <property name="text">
+       <string>Precision:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="7">
+     <widget class="QLabel" name="Mutation">
+      <property name="text">
+       <string>P(Mutation):</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="9">
+     <widget class="QTableWidget" name="individualsList"/>
+    </item>
+    <item row="4" column="5">
+     <widget class="QLabel" name="generation">
+      <property name="text">
+       <string>Generation:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="domain">
+      <property name="text">
+       <string>Domain:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6">
+     <widget class="QLineEdit" name="generationCount">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="QLineEdit" name="populationSize">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4">
+     <widget class="QPushButton" name="start">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="8">
+     <widget class="QLineEdit" name="mutationProbability">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="8">
+     <widget class="QPushButton" name="clearLog">
+      <property name="text">
+       <string>Clear log</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="8">
+     <widget class="QLineEdit" name="crossoverProbability">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLabel" name="populationSize_2">
+      <property name="text">
+       <string>Population:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="domainA">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QPushButton" name="runAll">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Run all</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="QPushButton" name="nextStep">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Next Step</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="6">
+     <widget class="QLineEdit" name="precision">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="coefficients">
+      <property name="text">
+       <string>Coefficients:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="7">
+     <widget class="QLabel" name="Crossover">
+      <property name="text">
+       <string>P(Crossover):</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QRadioButton" name="clearLogAfterG">
+      <property name="text">
+       <string>Clear after generation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5">
+     <widget class="QPushButton" name="nextCycle">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Next Cycle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3" colspan="2">
+     <widget class="QLineEdit" name="functionCoefficientC">
+      <property name="styleSheet">
+       <string notr="true">background-color: #353535;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QCheckBox" name="elitistCriteria">
+      <property name="text">
+       <string>Elitist criteria</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>951</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>functionCoefficientA</tabstop>
+  <tabstop>functionCoefficientB</tabstop>
+  <tabstop>functionCoefficientC</tabstop>
+  <tabstop>domainA</tabstop>
+  <tabstop>domainB</tabstop>
+  <tabstop>populationSize</tabstop>
+  <tabstop>generationCount</tabstop>
+  <tabstop>precision</tabstop>
+  <tabstop>mutationProbability</tabstop>
+  <tabstop>crossoverProbability</tabstop>
+  <tabstop>start</tabstop>
+  <tabstop>nextCycle</tabstop>
+  <tabstop>nextStep</tabstop>
+  <tabstop>clearLog</tabstop>
+  <tabstop>keepLogs</tabstop>
+  <tabstop>logs</tabstop>
+  <tabstop>runAll</tabstop>
+  <tabstop>individualsList</tabstop>
+  <tabstop>clearLogAfterG</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
